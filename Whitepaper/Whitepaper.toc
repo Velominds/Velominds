@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Industry overview}{5}{section.1}
+\contentsline {section}{\numberline {2}Mobility networks}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}first generation e-mobility: autonomy and connectivity}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Second generation e-mobility: technology integration and scalability}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Energy-to-grid platforms}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Regulation}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Deregulating energy markets}{6}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Regulating EV limits but energy production?}{6}{subsubsection.2.4.2}
+\contentsline {section}{\numberline {3}EV: from autonomy to production and storage design}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Estimations autonomy}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Estimations per capita energy production}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}EV designed for maximum autonomy}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}EV designed for energy production and storage}{8}{subsection.3.4}
+\contentsline {section}{\numberline {4}Testnet: Decentralized ebike-energy-to-grid platform (DEEP)}{8}{section.4}
+\contentsline {section}{\numberline {5}Roadmap}{9}{section.5}
+\contentsline {section}{\numberline {6}Boxes}{9}{section.6}
+\contentsline {section}{\numberline {7}Figures}{9}{section.7}
+\contentsline {section}{\numberline {8}FAQ}{9}{section.8}
+\contentsline {section}{\numberline {9}Acknowledgements}{10}{section.9}
+\contentsline {section}{\numberline {10}References}{10}{section.10}

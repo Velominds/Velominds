@@ -1,0 +1,492 @@
+\documentclass[12pt]{article}
+
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+
+\usepackage{subfigure}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage[authoryear]{natbib}
+\usepackage{multicol}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{verbatim}
+\usepackage{multirow}
+\usepackage{blindtext}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{babel}
+\usepackage{color}
+\newcommand{\carlos}[1]{\textcolor{red}{#1}}
+\usepackage{babel}
+
+%latex whitepaper style?
+%MaryVilla VeloLab MindLab DeepLab LabLand Cryptovelo\\
+\title{\large{Decentralized ebike-energy-to-grid platform ($\mathcal{DEEP}$):\\
+    From autonomy to power grid}}
+%\author{Carlos J. Meli\'an}
+    \maketitle
+%\begin{center}
+  %\hspace{-0.1 in}
+%  \includegraphics[weight=18cm,height=18cm]{VelomindsLogo.png}
+%\end{center}
+    \begin{document}
+
+\newpage
+\tableofcontents
+\newpage
+
+    \section*{Abstract}
+    v1\\
+    Green power generation, storage and distribution will be composed
+    of millions of small, decentralised power sources of producers and
+    consumers, the prosumers. In such systems, it will be important to
+    connect efficient batteries to secure and instantaneous,
+    autonomous green energy transactions across prosumers as energy
+    market conditions change. We aim to connect prosumers to a
+    decentralized ebike energy-to-grid platform (DEEP) using
+    blockchain technology. We introduce an integrated smart-testnet
+    mini-grid connecting batteries to open-source energy blockchain
+    platforms containing producers and consumers. We outline the
+    bottlenecks, the improvements needed, and a roadmap for the future
+    of coupling ebike networks to decentralized open-source computer
+    and power networks.
+    \\
+    v2\\
+    Cities worldwide are under a fast transformation of
+    mobility. Decreasing emissions and congestion are two of the main
+    engines of this rapid transformation and making mobility networks
+    functional while increasing efficiency of e-mobility is one of the
+    first challenges to make it happen. Innovation of e-mobility
+    vehicles is occurring at an unprecedented rates. Many new
+    technologies are being integrated to increase efficiency,
+    autonomy, and connectivity of e-mobility vehicles. This synthesis
+    between rapidly transforming mobility networks and first
+    generation e-mobility vehicles is a first step towards the
+    functionality of mobility networks. The second generation of
+    e-mobility vehicles is yet to be envisioned. Deregulation of
+    energy production is occurring at many countries and considering
+    mobility networks not only as reducing C02 emisions and congestion
+    but as a decentralized energy production networks is an open
+    issue. Despite a great potential to integrate engines, generators
+    and batteries of e-mobility vehicles to smart-mini-grid using
+    open-source energy platforms, energy production oriented
+    e-mobility devices are at a very incipient stage. Here we
+    introduce two designs for e-mobility, one focused on autonomy and
+    the second one in autonomy, energy production and storage. We
+    provide estimations of efficiency, autonomy and power capacity to
+    discuss the pros and cons of coupling energy-production driven
+    e-mobility vehicles, mobility networks and energy-to-grid
+    networks.
+
+    \newpage
+
+    \section*{Lay summary}
+    ---idea--------------------- \\
+    From autonomy to energy-production and storage driven design of
+    e-bikes.\\
+    Integrating multi-platform app to connect ebike dual battery to
+    blockchain energy platforms (i.e., Hyperledger fabric, Tobalaba,
+    Grid+, Powr)
+    \\
+    \\
+    ----Transdisciplinarity------------------------------------------------------------------------------------------- \\
+    Data science and modeling: Existing data, efficiency curves, bicycle dynamic models, thermodynamics constraints\\
+    Desing engineer: frame architecture-design oriented to produce and store energy, technology integration, materials\\
+    Computer science: blockchain--app code and VESC open-software \\
+    Electric engineer: efficient technologies, dual battery, inverters and micro-grids\\
+    ------------------------------------------------------------------------------------------------------------------
+    \\
+    \\
+    PROS
+    \\
+    0. Reduce co2 all energy cycle\\
+    1. Green energy --- sustainable development \\
+    2. Local smart grid development \\
+    3. Bottom-up: individual-community prosumers \\
+    4. Urban bike network development and functional e-mobility networks \\
+    5. Research about efficiency and smart meters by tracking and sharing energy production-consumption data \\
+    6. Real time price in the green energy markey by connecting many-to-many battery types-decentralized-green energy platforms \\
+    7. Deregulation energy production many countries \\
+    8. Frame architecture-design oriented to produce energy \\
+    \\
+    CONS
+    \\
+    1. Low efficiency dual battery\\
+    2. Low energy recovery\\
+    3. Energy production mostly for large kms/day \\
+    4. Absence of inverter-energy-to-grid networks in urban landscapes
+    \\
+    Keywords: Green energy. Interconnected networks. Plug-in electric
+    bikes. ebike networks. Smart mini-grid. Computer networks. Power
+    network. Blockchain.
+
+\newpage
+   
+\section{Industry overview}
+
+% Check\\  
+%Hyperledger Fabric
+
+%The problem--High dependency of a few and highly centralized energy
+% sources like fossil...
+Hundreds of millions of people have attained modern energy access over
+the last two decades through centralized distribution networks
+(refs). This means that more people on Earth than ever before are now
+connected to ever-growing and interconnected power networks. How we
+power these networks in the next decade will determine much of the
+impact of humanity on Earth named global warming and biodivesity loss
+(refs).
+
+First generation e-mobility devices and rapidly expanding mobility
+networks to reduce emisions and congestion in many cities...
+
+Second generation e-mobility devices coupling functional mobility
+networks to energy grids to reduce centralization and open energy
+markets to prosumers... regulation towards decentralized markets? Is
+it viable to produce energy with electric vehicles like bicycles?
+Which are the existing numbers and the main scalability issues? How
+will the new technologies and their integration change the existing
+numbers?
+
+Green energy storaged devices powering these grids (Solar and wind
+power, electric vehicles to grid -- EV2G), will be an important
+component to diminish human impact on Earth. Millions of small,
+decentralised power producers and consumers will have ample choice
+options. Electric vehicles, solar panels, wind, ebikes...etc will be
+endpoints interacting with each other in form of microgrids connected
+to sensors and energy management platforms. In such systems, it will
+be important to secure green energy production, storage and
+distribution by verifying instantaneous, decentralized and autonomous
+transactions across these nodes as green energy demand changes.
+
+However, the transition from the first generation e-mobility devices
+driven by increasing autonomy and connectance coupled with functional
+mobility networks to the second generation, e-mobility vehicles to
+grid is at a very incipient stage. Plug-in electric bikes can
+potentially be green storage devices. Yet, many questions remain about
+its power, efficiency and scalability, and how the integration among
+new technologies (i.e., energy efficiency like backward pedaling...,
+integrated solar panels) and prototypes designed to produce and store
+energy will change existing power and efficiency and its relationship
+to explore autonomy and increase scalability.
+
+Plug-in electric bikes (PEB) as green storage devices will be part of
+these mobility nerworks. There are, at least three componentsthat need
+to be integrated to make PEB feasible: 1) ebikes are currently built
+and marketed as a personal transportation solution, not as a personal
+plug-in power generator or a energy storage solution. Hubs, motors and
+frames are not designed with EV2G functionality in mind; 2) Physical
+infrastructure in the form of a network of dual-energy stations in
+places such as bicycle parkings and workplaces will be required, and
+3) Managing decentralized energy generation and storage accounting for
+information collection and control of charging/discharging of PEB will
+be key to distribute green energy from PEB. For example, a platform
+accounting for individual prosumer behaviour and market signals from
+the national or international electricity market (refs) (Fig 1).
+
+Here we introduce a blockchain platform connecting battery sensors
+from a PEB to an energy management software. The blockchain is what
+makes simultaneous exchange between producers and consumers possible
+in the first place, and is thus the required link to a certified
+CO2-free energy world (Box 1). We introduce a case study of a
+decentralized green energy to blockchain platform currently in testnet
+phase. Finally we summarize projects building transparent platforms
+for clean flow of renewable energy from the grid to homes and from
+homes to the grid (refs).
+
+Ultimately, as dynamic distributed energy markets become mainstream,
+the owners of decentralized devices can earn an income, not just from
+the energy they sell but from the network services they provide such
+as frequency and voltage control, load shifting, load shaping and load
+sinking.
+
+\section{Mobility networks}
+
+\subsection{first generation e-mobility: autonomy and connectivity}
+
+Integration of technologies to increase autonomy and connectivity and
+reduce emissions and congestion
+
+\subsection{Second generation e-mobility: technology integration and scalability}
+
+Integration of technologies to reduce energy centralization and
+increase scalability
+
+\subsection{Energy-to-grid platforms}
+
+EV2G technology has been in the market since the last decade.
+
+E2GV networks are already functional -- give examples. EV examples and
+existing companies providing dual energy algorithms ...Connecting to
+the grid -- pros/cons costs--distribution in the grid--performance
+devices--efficiency loss
+
+
+https://utilitymagazine.com.au/ev2g-imminent-reality-or-electric-fiction/
+
+The key to grid integration of EV­based storage is the aggregation of
+individual vehicles into a critical mass of total storage, with a
+combined capacity to palpably impact the grid. Individual storage
+capacities of single cars for grid integration are currently in the
+range of only 1 to 95kWh or 0.2 to 19kW output over a five hour
+discharge of full capacity
+
+However, there are many informational uncertainties and infrastructure
+voids which would need to be overcome to make EV2G feasible. Physical
+infrastructure in the form of a network of chargers in places such as
+car parks and workplaces will be required. In addition to physical
+infrastructure, EV2G systems will require significant informational
+infrastructure to operate. This will require the construction of a
+deep information layer, including data on individual EVs, their
+parking status, storage capability, power flows, state of charge, and
+the preferences and constraints of car owners and these are just some
+of the datasets required to effectively realise EV2G
+
+Decentralizing energy production from individuals to the blockchain
+technology -- examples of companies
+
+\subsection{Regulation}
+
+Regulations that might affect mobility networks
+
+\subsubsection{Deregulating energy markets}
+Deregulated energy markets
+
+\subsubsection{Regulating EV limits but energy production?}
+regulation EV -- speed limits but energy production?
+
+
+Plug-in electric bikes (PEB) belongs to a broader class of EV2G but
+with much more speed limit (max energy per capita USA law is < 20 mph
+unassisted and < 750 watt motor = bicycle). The most influential
+definition which distinguishes which e-bikes are pedelecs and which
+are not, comes from the EU directive (EN15194 standard) for motor
+vehicles, a bicycle is considered a pedelec if the pedal-assist,
+i.e. the motorised assistance that only engages when the rider is
+pedalling, cuts out once 25 km/h is reached, and when the motor
+produces maximum continuous rated power of not more than 250 watts
+(n.b. the motor can produce more power for short periods, such as when
+the rider is struggling to get up a steep hill).
+
+An e-bike conforming to these conditions is considered to be a pedelec
+in the EU and is legally classed as a bicycle. The EN15194 standard is
+valid across the whole of the EU and has also been adopted by some
+non-EU European nations and also some jurisdictions outside of Europe
+(such as the state of Victoria in Australia).
+
+Pedelecs are much like conventional bicycles in use and function the
+electric motor only provides assistance, most notably when the rider
+would otherwise struggle against a headwind or be going
+uphill. Pedelecs are therefore especially useful for people living in
+hilly areas where riding a bike would prove too strenuous for many to
+consider taking up cycling as a daily means of transport. They are
+also useful when it would be helpful for the riders who more generally
+need some assistance, e.g. for elderly people
+
+In summary pedelecs have pedal-assist only, motor assists only up to a
+decent but not excessive speed (usually 25 km/h), motor power up to
+250 watts.
+
+\section{EV: from autonomy to production and storage design}
+
+
+\subsection{Estimations autonomy}
+
+Data available about the time evolution of autonomy -- is it increasing?
+
+\subsection{Estimations per capita energy production}
+
+Estimations existing er capita energy production 
+Estimations future energy production integrating efficiency and new engines
+
+Max watts per hour for a 250 watts motor 
+Battery performance and efficiency: battery types
+
+(Li-ion or Li-air batteries and plug-in devices contain pros/cons that
+need to be taken into account to accurarely estimate efficiency and
+per-capita energy production. See Fig 1: historical efficiency of
+batteries and plug in devices);
+
+scalability
+
+\subsection{EV designed for maximum autonomy}
+
+       Carry on the plan\\
+       Quantitative assessment\\
+       Kw consumed to Kw produced (for example Tesla vs velo)\\
+       Ratio Kw_$cons$/Kw_$pro$ vs rentability?\\
+       Evolution efficiency-cycles-size batt\\
+       Km/h vs. Kw vs. efficiency\\
+       Kw vs. efficiency $$(market)\\  
+       Solution\\ 
+       Go backwards\\
+       Is it correct? Reproducible?\\
+       Apply to other problems? Data?
+
+\subsection{EV designed for energy production and storage}
+
+       Carry on the plan\\
+       Quantitative assessment\\
+       Kw consumed to produced Kw (for example Tesla vs velo)\\
+       Ratio Kw_$cons$/Kw_$pro$ vs rentability?\\
+       Evolution efficiency-cycles-size batt\\
+       Km/h vs. Kw vs. efficiency\\
+       Kw vs. efficiency vs. $$(market)\\  
+       Solution\\ 
+       Go backwards\\
+       Is it correct? Reproducible?\\
+       Apply to other problems? Data?
+
+\section{Testnet: Decentralized ebike-energy-to-grid platform (DEEP)}
+
+Universal-battery app
+Hub-battery specific app
+
+Decentralized energy markets connect homes and electric vehicles with
+software that automatically sells and buys power to and from the grid
+on the basis of real-time price signals. Tracking of renewable-energy
+certificates is one of dozens of potential applications of blockchain
+technology that could solve data management challenges in the
+electricity sector. Blockchain allows secure verifiability and
+transparency of the energy transactions using small-scale
+batteries. This ensures a simple connection between suppliers of
+locally distributed flexible energy producers and consumers demanding
+power locally or regionally from the grid.
+
+Many platforms currently allow for setting up a blockchain framework
+to track green energy in the power grid. We will implement two
+testnets, one using the Hyperledger Fabric, one of the Hyperledger
+projects hosted by The Linux Foundation, and a second one using
+Tobalaba, a testnet hosted by the Energy Web Foundation
+(http://energyweb.org/network/). Here we introduce a testnet to
+plug-in a small number of ebikes to the grid accounting for an
+ID-renewable-energy certificate, spatial location of the transaction
+() and metrics to characterize the stability of the power grid. The
+steps are the following:
+
+1. Connect hub motor and batteries to an 
+open-software and interface
+
+Examples http://vedder.se/2015/01/vesc-open-source-esc/
+https://www.kickstarter.com/projects/800872710/os-ebike-open-source-electric-bicycle-design-you-c/description
+
+A VESC is at the heart of the bike and handles the BLDC (brushless
+direct current) motor control, receives input from the throttle or
+pedal sensors, and outputs data to the display to show speed,
+distance, battery statistics, or anything else you'd like to view
+while riding.Â 
+
+ 
+2. Plugin hub battery using VESC to the grid (plugin energy converted
+required). Check grid features.  3. Login deep app to connect to the
+bluetooth ready battery. Go to renewable-energy certificate (REC) to
+generate the ID and kw of energy to upload 4. Connect to P2P trading,
+tobalaba or Hyperledger fabric 5. You can choose between A. buyers and
+kw price or B. upload energy to the grid using the ID 6. Link the ID
+to your account and transfers will be made in "real" time
+
+
+
+App connecting hub battery to tobalaba grid+ or ibm - open-source energy blockchain platform
+
+Own crypto
+https://www.ethereum.org/token
+
+Grid+
+https://blog.gridplus.io/gridx-the-future-of-energy-markets-da104c285363?gi=3e04edc41244
+
+Grid singularity
+http://gridsingularity.com/#/0/1
+
+Tobalaba
+http://energyweb.org/network/
+
+
+Power ledger
+
+LO3
+
+arcc 
+batripower
+neomou
+
+\section{Roadmap}
+
+https://blockhive.ee/ilp
+
+\begin{itemize}
+\item
+\item 
+\end{itemize}
+
+\section{Boxes} 
+
+
+\caption{Box 1: What can add the blockchain technology to the decentralization of energy?} 
+
+\caption{Box 2: Flowchart steps 1-6: 1. Battery hub and converter; 2. connect app to battery hub; 3. Generate REC and ID; 4. Connect P2P trading; 5. Select energy type, quantity and how to sell, and 6. Receive payments in crypto or currency}
+
+
+
+\section{Figures} 
+
+
+\begin{figure}[htp]
+\begin{center}
+%\vspace{-1 in}
+%\hspace{-0.75 in}\includegraphics[width=14cm,height=14cm]{PEB.eps}
+\vspace{0.25 in}
+\caption{Grid-interactive ebike system}
+\vspace{2 in}
+\end{center}
+\end{figure}
+
+%\caption{
+%A. simplest
+%B. network bikes -- battery -- (grid interactive stations -- home) -- grid
+%C. network bikes -- battery -- deep (blockchain)  -- (grid interactive stations -- home) -- grid
+
+%Flowchart of a decentralized E2GV model:
+%  A. ebike hubs: Engineering: Status?
+%  B. Token: Blockchain Ethereum or lamdem.io.
+%  C. Dual energy power grid: algorithms and engineering.
+%  D. Regulation and national boundaries: Velonetwork}
+  
+\caption{Fig. 2. Efficiency per capita energy production: kms-hub efficiency power-electricity plot + plugin cost : %loss V2G}
+
+
+\section{FAQ} 
+
+%\caption{FAQ}
+How much energy can an ebike produce per time?\\
+How much energy can an ebike network produce per time?\\ 
+Which are the main scalability constraints?\\
+How much energy can be sent back to the grid accounting for plugin losses, efficiency and regulations?\\
+
+
+\section{Acknowledgements}
+
+
+\section{References} 
+
+\bibliographystyle{chicago}
+\bibliography{references}
+
+\end{document}
+
+
+
