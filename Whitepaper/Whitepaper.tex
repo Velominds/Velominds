@@ -37,7 +37,7 @@
 %MaryVilla VeloLab MindLab DeepLab LabLand Cryptovelo\\
 \title{\large{Decentralized ebike-energy-to-grid platform ($\mathcal{DEEP}$):\\
     From autonomy to power grid}}
-%\author{Carlos J. Meli\'an}
+\author{Carlos J. Meli\'an}
     \maketitle
 %\begin{center}
   %\hspace{-0.1 in}
@@ -50,75 +50,54 @@
 \newpage
 
     \section*{Abstract}
-    v1\\
     Green power generation, storage and distribution will be composed
     of millions of small, decentralised power sources of producers and
     consumers, the prosumers. In such systems, it will be important to
-    connect efficient batteries to secure and instantaneous,
-    autonomous green energy transactions across prosumers as energy
-    market conditions change. We aim to connect prosumers to a
-    decentralized ebike energy-to-grid platform (DEEP) using
-    blockchain technology. We introduce an integrated smart-testnet
-    mini-grid connecting batteries to open-source energy blockchain
-    platforms containing producers and consumers. We outline the
-    bottlenecks, the improvements needed, and a roadmap for the future
-    of coupling ebike networks to decentralized open-source computer
+    connect efficient green power devices to batteries to secure and
+    instantaneous, autonomous green energy transactions across
+    prosumers as energy market conditions change. In this proposal we
+    aim to 1) quantify green power production of pedal turbine
+    generators for bike networks of different sizes, and 2) integrate
+    green power production to a decentralized ebike energy-to-grid
+    platform (DEEP) using blockchain technology. We introduce an
+    integrated smart-testnet mini-grid prototype connecting pedal
+    turbine generators to open-source energy blockchain platforms
+    containing producers and consumers. We outline the bottlenecks,
+    the improvements needed, and a roadmap for the future of coupling
+    efficient turbine generators to decentralized open-source computer
     and power networks.
     \\
-    v2\\
-    Cities worldwide are under a fast transformation of
-    mobility. Decreasing emissions and congestion are two of the main
-    engines of this rapid transformation and making mobility networks
-    functional while increasing efficiency of e-mobility is one of the
-    first challenges to make it happen. Innovation of e-mobility
-    vehicles is occurring at an unprecedented rates. Many new
-    technologies are being integrated to increase efficiency,
-    autonomy, and connectivity of e-mobility vehicles. This synthesis
-    between rapidly transforming mobility networks and first
-    generation e-mobility vehicles is a first step towards the
-    functionality of mobility networks. The second generation of
-    e-mobility vehicles is yet to be envisioned. Deregulation of
-    energy production is occurring at many countries and considering
-    mobility networks not only as reducing C02 emisions and congestion
-    but as a decentralized energy production networks is an open
-    issue. Despite a great potential to integrate engines, generators
-    and batteries of e-mobility vehicles to smart-mini-grid using
-    open-source energy platforms, energy production oriented
-    e-mobility devices are at a very incipient stage. Here we
-    introduce two designs for e-mobility, one focused on autonomy and
-    the second one in autonomy, energy production and storage. We
-    provide estimations of efficiency, autonomy and power capacity to
-    discuss the pros and cons of coupling energy-production driven
-    e-mobility vehicles, mobility networks and energy-to-grid
-    networks.
+    Keywords: Green energy. Interconnected networks. Plug-in electric
+    bikes. ebike networks. Smart mini-grid. Computer networks. Power
+    network. Blockchain. Energy harvesting. Micro-energy storage.
 
     \newpage
 
     \section*{Lay summary}
-    ---idea--------------------- \\
-    From autonomy to energy-production and storage driven design of
-    e-bikes.\\
-    Integrating multi-platform app to connect ebike dual battery to
+
+    ---Idea--------------------- \\
+    Integrating pedal power turbine generators with dual battery to
     blockchain energy platforms (i.e., Hyperledger fabric, Tobalaba,
-    Grid+, Powr)
+    Grid+, Powr)erator speed (rpm) vs Output power (W) n
     \\
     \\
-    ----Transdisciplinarity------------------------------------------------------------------------------------------- \\
-    Data science and modeling: Existing data, efficiency curves, bicycle dynamic models, thermodynamics constraints\\
-    Desing engineer: frame architecture-design oriented to produce and store energy, technology integration, materials\\
-    Computer science: blockchain--app code and VESC open-software \\
-    Electric engineer: efficient technologies, dual battery, inverters and micro-grids\\
+    ---Transdisciplinarity------------------------------------------------------------------------------------------- \\
+    Data science and modeling: Efficiency curves integrating generator speed (rpm) vs. Output power (W) vs. riding time\\
+    (proxy of generator speed) vs. Power (W)  bicycle dynamic models, thermodynamics constraints\\
+    Engineering and design: oriented to produce and store energy\\
+    Computer science: Distributed and blockchain coding, coding VESC open-software \\
+    Electric engineer: Design pedal turbine generators, dual battery, inverters and micro-grids\\
     ------------------------------------------------------------------------------------------------------------------
     \\
     \\
     PROS
     \\
-    0. Reduce co2 all energy cycle\\
+    0. Reduce $C0_{2}$ across the energy cycle\\
     1. Green energy --- sustainable development \\
     2. Local smart grid development \\
-    3. Bottom-up: individual-community prosumers \\
+    3. Bottom-up: distributed individual-community prosumers \\
     4. Urban bike network development and functional e-mobility networks \\
-    5. Research about efficiency and smart meters by tracking and sharing energy production-consumption data \\
+    5. Research about efficiency and smart metrics by tracking and sharing energy production-consumption data \\
     6. Real time price in the green energy markey by connecting many-to-many battery types-decentralized-green energy platforms \\
     7. Deregulation energy production many countries \\
     8. Frame architecture-design oriented to produce energy \\
@@ -129,11 +108,7 @@
     2. Low energy recovery\\
     3. Energy production mostly for large kms/day \\
     4. Absence of inverter-energy-to-grid networks in urban landscapes
-    \\
-    Keywords: Green energy. Interconnected networks. Plug-in electric
-    bikes. ebike networks. Smart mini-grid. Computer networks. Power
-    network. Blockchain.
-
+  
 \newpage
    
 \section{Industry overview}
@@ -143,6 +118,31 @@
 
 %The problem--High dependency of a few and highly centralized energy
 % sources like fossil...
+Cities worldwide are under a fast transformation of
+mobility. Decreasing emissions and congestion are two of the main
+engines of this rapid transformation and making mobility networks
+functional while increasing efficiency of e-mobility is one of the
+first challenges to make it happen. Innovation of e-mobility vehicles
+is occurring at an unprecedented rates. Many new technologies are
+being integrated to increase efficiency, autonomy, and connectivity of
+e-mobility vehicles. This synthesis between rapidly transforming
+mobility networks and first generation e-mobility vehicles is a first
+step towards the functionality of mobility networks. The second
+generation of e-mobility vehicles is yet to be envisioned.
+
+Deregulation of energy production is occurring at many countries and
+considering mobility networks not only as reducing C02 emisions and
+congestion but as a decentralized energy production networks is an
+open issue. Despite a great potential to integrate engines, generators
+and batteries of e-mobility vehicles to smart-mini-grid using
+open-source energy platforms, energy production oriented e-mobility
+devices are at a very incipient stage. Here we introduce two designs
+for e-mobility, one focused on autonomy and the second one in
+autonomy, energy production and storage. We provide estimations of
+efficiency, autonomy and power capacity to discuss the pros and cons
+of coupling energy-production driven e-mobility vehicles, mobility
+networks and energy-to-grid networks.
+
 Hundreds of millions of people have attained modern energy access over
 the last two decades through centralized distribution networks
 (refs). This means that more people on Earth than ever before are now
@@ -216,7 +216,7 @@ sinking.
 
 \section{Mobility networks}
 
-\subsection{first generation e-mobility: autonomy and connectivity}
+\subsection{First generation e-mobility: autonomy and connectivity}
 
 Integration of technologies to increase autonomy and connectivity and
 reduce emissions and congestion
