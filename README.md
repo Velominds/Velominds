@@ -4,7 +4,6 @@
 * DATA: https://drive.switch.ch/index.php/s/pQRYseKpMuRXWxH
 
 ## Stages
-
 * Online service to build custom-driven bicycles. Check the gallery at ... for examples
 * Garage to widen the variety of models and features
 
@@ -21,22 +20,19 @@ open-source energy blockchain platforms containing producers and consumers. Outl
 improvements needed, and a roadmap for the future of coupling ebike networks to decentralized open-source
 computer and power networks.
 
-————————----- Milestones -----------------------------------------------------------------
-1. Data analysis: Power-rpm-speed curves (humans)
-2. Prototype: Pedal power gearbox turbine (Power-rpm-speed curves)
-3. Blockchain: Connecting ebike gearbox power generator to decentralized energy platforms
+## Milestones for technological development 
+* Data analysis: Power-rpm-speed curves (humans)
+* Prototype: Pedal power gearbox turbine (Power-rpm-speed curves)
+* Blockchain: Connecting ebike gearbox power generator to decentralized energy platforms
 (i.e., Hyperledger fabric, Tobalaba, Grid+, Powr)
-—————————---------------------------------------------------------------------------------
 
 ## Interdisciplinarity
-
 * NOS high-end components back to the road
 * Network and data science: integration networks and data (urban, bicyle, power and energy distribution)
 * Computer science: blockchain–app code and VESC open-software
 * Electric engineer: pedal power gearbox turbine, inverters, generators and micro-grids
 
 ## Sustainability
-
 * C02 reduction along all energy cycle
 * Green energy
 * Local smart grid development
@@ -48,18 +44,14 @@ energy platforms
 * Supporting deregulation EU energy production 
 * Frame architecture-design oriented to produce energy
 
-
 ## Challenges
-
 * Low efficiency dual battery
 * Low energy recovery (check prototype data using gearbox turbine)
 * Energy production mostly for large kms/day
 * Absence of inverter-energy-to-grid networks in urban landscapes
 
-
-## Keywords: Green energy. Interconnected networks. Plug-in electric bikes. Gearbox turbine. Harvesting energy. Ebike networks. Smart mini-grid.
-Computer networks. Power network. Blockchain.
-
+## Keywords
+Green energy. Interconnected networks. Plug-in electric bikes. Gearbox turbine. Harvesting energy. Ebike networks. Smart mini-grid. Computer networks. Power network. Blockchain.
 
 TODO 
 Folder Structure
