@@ -13,6 +13,6 @@ Custom- and non-custom velos, targeting high-end NOS components and frames from 
 * Urban bike network development
 
 ## GALLERY 
-* Examples of projects 
-* Order your project
+* Examples of projects (see GALLERY folder)
+* Link to order your project. 
 
