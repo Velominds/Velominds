@@ -14,5 +14,20 @@ Custom- and non-custom velos, targeting high-end NOS components and frames from 
 
 ## GALLERY 
 * Examples of projects (see GALLERY folder)
-* Link to order your project. 
+* Link to order
+
+## WEBPAGE 
+  * Page 1: 
+    Vision
+    
+    Velos
+    
+    NFTs
+    
+    Contact
+    
+  * Page 2
+    Velos 
+      TH123   
+
 
