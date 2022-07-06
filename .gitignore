@@ -1,4 +1,5 @@
 *.txt
+#ignore the folders
 Whitepaper/
 Images/
 Data/
