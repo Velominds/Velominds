@@ -1,6 +1,8 @@
 instagram: https://www.instagram.com/velominds/
 pinterest: https://www.pinterest.ch/velominds/circular-concept-iii/
 
+Pictures TH123
+https://drive.switch.ch/index.php/s/zGVkRfvgGNJ0a8w
 
 * frame: Zeus pista from the 80's with Reynolds SMS tube
 * fork: Handcrafted and disc brake ready with polished stainless steel crown by Andres Arregui (http://arreguivelazquez.com/)
