@@ -1,7 +1,7 @@
 *.txt
 #ignore the folders
-Whitepaper/
-Images/
-Data/
-Code/
+Whitepaper
+Images
+Data
+Code
 .gitsigners
